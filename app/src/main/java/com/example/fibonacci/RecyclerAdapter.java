@@ -31,9 +31,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
 
     @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        Fibonacci fbNum = result.get(position);
-        holder.id.setText(Integer.toString(fbNum.id));
-        holder.number.setText(fbNum.number);
+        Fibonacci fibonacci = result.get(position);
+        holder.id.setText(Integer.toString(fibonacci.id));
+        holder.number.setText(fibonacci.number);
     }
 
     @Override
